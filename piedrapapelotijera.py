@@ -5,7 +5,7 @@ print("Piedra, papel o tijera, v0.02")
 print("1 = piedra ")
 print("2 = papel ")
 print("3 = tijera ")
-tirada = input("escoge tu tirada: ")
+tirada = int(input("escoge tu tirada: "))
 
 tiradaordenador = random.randint(1,3)
 
@@ -15,3 +15,22 @@ elif tiradaordenador == 2:
     print("El ordenador a saca papel")
 elif tiradaordenador == 3:
     print("El ordenador ha sacado tijera")
+
+if tirada == 1 and tiradaordenador == 1:
+    print("Empate")
+elif tirada == 3 and tiradaordenador == 3:
+    print("Empate")
+elif tirada == 2 and tiradaordenador == 2:
+    print("Empate")
+elif tirada == 1 and tiradaordenador == 2:
+    print("Pierde el jugador")
+elif tirada == 2 and tiradaordenador == 3:
+    print("Pierde el jugador")
+elif tirada == 3 and tiradaordenador == 1:
+    print("Pierde el jugador")
+elif tirada == 1 and tiradaordenador == 3:
+     print("Jugador gana")
+elif tirada == 2 and tiradaordenador == 1:
+     print("Jugador gana")
+elif tirada == 3 and tiradaordenador == 2:
+    print("Jugador gana")
