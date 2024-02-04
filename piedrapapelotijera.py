@@ -9,3 +9,10 @@ tirada = input("escoge tu tirada: ")
 tiradaordenador = random.randint(1,3)
 print(tirada)
 print(tiradaordenador)
+
+if tiradaordenador == 1:
+    print("El ordenador a sacado piedra")
+elif tiradaordenador == 2:
+    print("El ordenador a saca papel")
+elif tiradaordenador == 3:
+    print("El ordenador ha sacado tijera")
